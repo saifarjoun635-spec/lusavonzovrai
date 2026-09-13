@@ -1,0 +1,219 @@
+{
+  "project_info": {
+    "brand_name": "LUSAVONZO",
+    "tagline": "Des espaces plus propres, une vie meilleure",
+    "industry": "Nettoyage Résidentiel, Commercial & Industriel",
+    "contact": {
+      "phone": "438 923 9052",
+      "phone_raw": "4389239052",
+      "email": "bizuka70@gmail.com"
+    },
+    "language": "French",
+    "app_type": "Multi-page Marketing & Lead-Generation Web Application"
+  },
+  "design_archetype": {
+    "archetype": "Organic Precision & Premium Eco-Boutique (Hybrid Archetype 1 + Swiss Clarity)",
+    "description": "Fusion of high-end architectural studio aesthetics and organic eco-friendly purity. Deep slate tone contrast with fresh emerald green accents and soft translucent teal glass elements. Uses asymmetric Swiss grid rules, generous whitespace, kinetic typography, and editorial scrollytelling.",
+    "emotional_tone": "Prestigious, spotlessly fresh, trustworthy, modern, hyper-reliable"
+  },
+  "typography": {
+    "heading_font": "Outfit, Plus Jakarta Sans, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "mono_accent_font": "JetBrains Mono, monospace",
+    "font_sources": [
+      "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    ],
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-snug",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-normal",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base sm:text-lg text-slate-600 leading-relaxed",
+      "caption_overline": "text-xs uppercase font-mono tracking-[0.25em] text-emerald-600 font-semibold"
+    }
+  },
+  "colors": {
+    "theme": "Light mode primary with rich dark slate contrast sections",
+    "palette": {
+      "primary_brand_teal": "#0F6E84",
+      "primary_hover_teal": "#0B5263",
+      "emerald_accent": "#10B981",
+      "emerald_light": "#D1FAE5",
+      "emerald_dark": "#047857",
+      "background_light": "#FAFCFC",
+      "surface_card": "#FFFFFF",
+      "surface_subtle": "#F1F5F9",
+      "dark_slate_hero": "#091E26",
+      "text_dark": "#0F172A",
+      "text_muted": "#475569",
+      "text_light": "#F8FAFC",
+      "border_subtle": "#E2E8F0",
+      "glass_border": "rgba(255, 255, 255, 0.2)",
+      "badge_eco": "#ECFDF5"
+    },
+    "rules": {
+      "tinted_greys": "Always tint greys with a subtle cyan/teal hue (#0F172A instead of pure #000000).",
+      "contrast_wcag": "Text over teal buttons must be white with min 4.5:1 ratio. Text on emerald chips must be deep emerald or white."
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-md bg-white/80 border border-slate-200/80 shadow-sm",
+    "dark_glass": "backdrop-blur-xl bg-slate-900/85 border border-white/10 text-white shadow-2xl",
+    "card_hover_effect": "transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-emerald-500/40",
+    "tracing_beam_border": "Subtle 1px glowing line around featured service cards and contact form container.",
+    "textures": "Subtle ambient gradient mesh orb behind hero section and clean dot-grid background patterns."
+  },
+  "navigation_structure": {
+    "header": {
+      "desktop_links": [
+        {"name": "Accueil", "path": "/"},
+        {"name": "Services", "path": "/services"},
+        {"name": "À propos", "path": "/a-propos"},
+        {"name": "Contact", "path": "/contact"}
+      ],
+      "hero_cta": {
+        "text": "Appeler (438) 923-9052",
+        "href": "tel:4389239052",
+        "style": "gros bouton appeler avec micro-animation pulsante et icône de téléphone"
+      }
+    },
+    "mobile": "Sticky top bar with quick call action + drawer menu"
+  },
+  "pages_and_content_blueprint": {
+    "page_1_accueil": {
+      "route": "/",
+      "sections": [
+        {
+          "name": "Hero Section",
+          "components": "Kinetic Hero with line-by-line staggered text reveal, animated badge ('LUSAVONZO • Nettoyage d'exception'), dual CTAs: Big Call button 'Appeler 438 923 9052' and 'Demander un devis rapide', plus floating high-trust stats badges (100% Satisfait, Éco-Produits, Intervention 24/7)."
+        },
+        {
+          "name": "Editorial Marquee",
+          "components": "Infinite slow scrolling marquee ticker highlighting core values: 'NETTOYAGE RÉSIDENTIEL • COMMERCIALE & BUREAUX • LOCAUX INDUSTRIELS • PRODUITS ÉCO-RESPONSABLES • SERVICE FLEXIBLE & FIABLE • SANITATION DE POINTE'."
+        },
+        {
+          "name": "Services Overview (Tetris Bento Grid)",
+          "components": "3 interactive bento grid cards displaying Residential, Commercial, and Industrial cleaning with hover image expansions, feature tags, and quick link to full service page."
+        },
+        {
+          "name": "Numbered Manifesto Chapters",
+          "components": "4 chapters explaining Lusavonzo's standard: 01. Analyse & Planification, 02. Produits Éco-Certifiés, 03. Exécution de Précision, 04. Contrôle Qualité Rigoureux."
+        },
+        {
+          "name": "Interactive Quick Quote Calculator Preview",
+          "components": "Simple visual slider/selector allowing clients to pick surface type and estimated size, showing estimated time & direct contact shortcut."
+        },
+        {
+          "name": "Client Reviews & Guarantee Section",
+          "components": "Testimonial carousel with star ratings, verified badge, and 100% Satisfaction Guarantee banner."
+        },
+        {
+          "name": "Prominent Call to Action Banner",
+          "components": "Dark Slate background container with huge call button and direct SMS link."
+        }
+      ]
+    },
+    "page_2_services": {
+      "route": "/services",
+      "sections": [
+        {
+          "name": "Services Header",
+          "components": "Headline 'Nos Solutions de Nettoyage Sur Mesure', filter tabs (Tous, Résidentiel, Commercial, Industriel, Grand Nettoyage)."
+        },
+        {
+          "name": "Detailed Service Cards Grid",
+          "components": "Expanded service blocks for: 1. Nettoyage Résidentiel Intérieur/Extérieur, 2. Commerces, Bureaux & Espaces Pros, 3. Sites Industriels & Après-Chantier, 4. Nettoyage en Profondeur & Désinfection, 5. Traitement Éco-Sûr de Surfaces."
+        },
+        {
+          "name": "Service Comparison Table",
+          "components": "Interactive feature breakdown table detailing what's included in Regular vs Deep vs Commercial cleaning."
+        },
+        {
+          "name": "FAQ Accordion",
+          "components": "Shadcn Accordion answering frequency, equipment provided, eco-product safety, payment methods, and booking delays."
+        }
+      ]
+    },
+    "page_3_a_propos": {
+      "route": "/a-propos",
+      "sections": [
+        {
+          "name": "Brand Story",
+          "components": "Narrative hero introducing LUSAVONZO's origin, philosophy ('Des espaces plus propres, une vie meilleure'), and commitment to eco-friendly excellence."
+        },
+        {
+          "name": "Core Pillars",
+          "components": "4 visual pillars: Fiabilité Absolue, Écologie Active, Équipe Qualifiée, Transparence Totale."
+        },
+        {
+          "name": "Eco Products Highlight",
+          "components": "Showcase of eco-safe cleaning agents, zero harmful chemicals guarantee, safe for pets, children, and indoor air quality."
+        },
+        {
+          "name": "Service Area Map & Hours",
+          "components": "Visual coverage card listing regions served (Grand Montréal & environs) and operating hours."
+        }
+      ]
+    },
+    "page_4_contact": {
+      "route": "/contact",
+      "sections": [
+        {
+          "name": "Contact Hero",
+          "components": "Title 'Demandez Votre Devis ou Contactez-Nous Instantanément', prompt call action card."
+        },
+        {
+          "name": "Frontend Direct Dispatcher Form (Email vs SMS Toggle)",
+          "components": "Client chooses preferred contact mode: '📱 SMS Instantané (438 923 9052)' OR '✉️ Courriel (bizuka70@gmail.com)'. Fields: Nom complet, Téléphone, Adresse / Ville, Type de Service (Résidentiel, Commercial, Industriel, Grand Nettoyage), Fréquence souhaitée, Message / Détails. Clicking Submit dynamically generates and triggers prefilled mailto: or sms: link!"
+        },
+        {
+          "name": "Direct Action Hub",
+          "components": "One-click giant call button (`tel:4389239052`), direct SMS button (`sms:4389239052`), and direct email link (`mailto:bizuka70@gmail.com`)."
+        }
+      ]
+    }
+  },
+  "image_urls": {
+    "hero_residential_interior": "https://images.unsplash.com/photo-1628744876497-eb30460be9f6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxjbGVhbiUyMGx1eHVyeSUyMG1vZGVybiUyMGhvdXNlJTIwaW50ZXJpb3IlMjBicmlnaHQlMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc4OTMzOTg3MXww&ixlib=rb-4.1.0&q=85",
+    "commercial_office_lobby": "https://images.unsplash.com/photo-1758448721162-0c77cf477d6f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBjbGVhbiUyMGNvbW1lcmNpYWwlMjBvZmZpY2UlMjBidWlsZGluZyUyMGxvYmJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzg5MzM5ODcxfDA&ixlib=rb-4.1.0&q=85",
+    "eco_products_spray": "https://images.unsplash.com/photo-1707143598173-944230c2de24?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxlY28lMjBmcmllbmRseSUyMGNsZWFuaW5nJTIwcHJvZHVjdHMlMjBnbGFzcyUyMHNwcmF5JTIwYm90dGxlJTIwcGxhbnR8ZW58MHx8fHwxNzg5MzM5ODcxfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "motion_and_animations": {
+    "libraries": ["framer-motion", "lucide-react", "@studio-freight/lenis"],
+    "effects": [
+      "Smooth scrolling with Lenis engine",
+      "Staggered entrance animations on page load and route changes",
+      "Hover scaling and light bleed glow on service cards",
+      "Pulsing ring effect around the main 'Appeler' button to command immediate visual attention",
+      "Sticky floating call button on mobile screens"
+    ]
+  },
+  "testing_data_testid_convention": {
+    "mandatory_rule": "All interactive elements (buttons, inputs, links, tabs, form controls) MUST contain clear data-testid attributes.",
+    "examples": [
+      "data-testid=\"nav-logo\"",
+      "data-testid=\"nav-link-accueil\"",
+      "data-testid=\"nav-link-services\"",
+      "data-testid=\"nav-link-a-propos\"",
+      "data-testid=\"nav-link-contact\"",
+      "data-testid=\"header-big-call-button\"",
+      "data-testid=\"hero-call-button\"",
+      "data-testid=\"hero-quote-button\"",
+      "data-testid=\"contact-mode-toggle-email\"",
+      "data-testid=\"contact-mode-toggle-sms\"",
+      "data-testid=\"contact-form-submit-button\"",
+      "data-testid=\"contact-form-name-input\"",
+      "data-testid=\"contact-form-phone-input\"",
+      "data-testid=\"contact-form-service-select\"",
+      "data-testid=\"floating-mobile-call-button\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure client-side routing is seamlessly implemented using React Router DOM.",
+    "Ensure French language is used throughout the copy with flawless grammar and high-end tone.",
+    "Implement the Contact page dispatcher so when the user fills out the form and chooses SMS or Email, clicking the submit button opens `mailto:bizuka70@gmail.com?subject=...&body=...` or `sms:4389239052?body=...` with full prefilled context.",
+    "Place the big 'Appeler (438) 923-9052' call button prominently in the navbar, in the Hero, in the section callouts, and as a floating button on mobile screens.",
+    "Ensure all components follow the specified data-testid naming conventions.",
+    "Integrate the image URLs provided for residential, commercial, and eco-product showcases."
+  ]
+}
