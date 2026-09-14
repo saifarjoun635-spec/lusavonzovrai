@@ -21,6 +21,12 @@
 - Données centralisées : /app/frontend/src/data/site.js (téléphone, courriel, services, FAQ, témoignages)
 - Logo : /app/frontend/public/assets/logo.png
 
+## Implémenté (14 sept. 2026)
+- Page Galerie (/galerie) : 13 photos dont les 5 vraies photos du client (salle d'eau AVANT, lavabos AVANT, salle de pause APRÈS, corridor APRÈS, appartement AVANT déménagement), badges « Avant » / « Après » / « Intervention réelle », filtres (Tous, Interventions réelles, Résidentiel, Commercial, Industriel), visionneuse plein écran (lightbox animée), CTA
+- Accueil : nouvelle section « Nos réalisations, en vrai » avec 3 vraies photos liées à la galerie
+- Menu : lien « Galerie » ajouté (desktop + mobile + pied de page)
+- Photos client hébergées localement : /app/frontend/public/assets/gallery/
+
 ## Implémenté (13 sept. 2026)
 - Accueil : hero cinétique avec révélation ligne par ligne, parallaxe sur image, marquee éditorial, bento services, manifeste numéroté 01-04, estimateur de temps, témoignages + garantie, bannière CTA
 - Gros bouton « Appeler (438) 923-9052 » : navbar, hero, bannières, bouton flottant mobile (pulsant)
@@ -31,5 +37,5 @@
 
 ## Backlog priorisé
 - P0 : (rien de bloquant)
-- P1 : Page Galerie photos avant/après ; vraies photos des interventions du client
+- P1 : Ajouter les prochaines vraies photos d'interventions au fil des contrats ; vraies photos de l'équipe
 - P2 : Avis Google réels ; blog/conseils ménagers (SEO) ; formulaire avec envoi réel via Resend ; version anglaise ; bandeau promo saisonnier

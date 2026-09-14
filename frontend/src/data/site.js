@@ -7,6 +7,7 @@ export const LOGO_URL = "/assets/logo.png";
 export const NAV_LINKS = [
   { name: "Accueil", path: "/", testid: "nav-link-accueil" },
   { name: "Services", path: "/services", testid: "nav-link-services" },
+  { name: "Galerie", path: "/galerie", testid: "nav-link-galerie" },
   { name: "À propos", path: "/a-propos", testid: "nav-link-a-propos" },
   { name: "Contact", path: "/contact", testid: "nav-link-contact" },
 ];
@@ -161,6 +162,22 @@ export const TESTIMONIALS = [
     role: "Syndic de copropriété",
     text: "Après les travaux, tout était couvert de poussière. LUSAVONZO a tout remis à neuf en une journée. Travail remarquable.",
   },
+];
+
+export const GALLERY_ITEMS = [
+  { src: "/assets/gallery/e.webp", title: "Salle d'eau commerciale", cat: "Commercial", tag: "Avant", real: true },
+  { src: "/assets/gallery/c.webp", title: "Lavabos & miroirs — espace commun", cat: "Commercial", tag: "Avant", real: true },
+  { src: "/assets/gallery/d.webp", title: "Salle de pause des employés", cat: "Commercial", tag: "Après", real: true },
+  { src: "/assets/gallery/b.webp", title: "Corridor — planchers revigorés", cat: "Commercial", tag: "Après", real: true },
+  { src: "/assets/gallery/a.jpg", title: "Appartement avant grand ménage (déménagement)", cat: "Résidentiel", tag: "Avant", real: true },
+  { src: IMAGES.residentiel, title: "Entretien résidentiel complet", cat: "Résidentiel" },
+  { src: IMAGES.cuisine, title: "Cuisine étincelante", cat: "Résidentiel" },
+  { src: IMAGES.maison, title: "Extérieur de résidence", cat: "Résidentiel" },
+  { src: IMAGES.commercial, title: "Hall d'entrée commercial", cat: "Commercial" },
+  { src: IMAGES.bureau, title: "Espaces de bureaux", cat: "Commercial" },
+  { src: IMAGES.industriel, title: "Entrepôt & site industriel", cat: "Industriel" },
+  { src: IMAGES.profondeur, title: "Grand nettoyage en action", cat: "Industriel" },
+  { src: IMAGES.eco, title: "Produits éco-responsables", cat: "Résidentiel" },
 ];
 
 export const FAQ_ITEMS = [

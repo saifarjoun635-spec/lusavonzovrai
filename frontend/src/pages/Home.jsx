@@ -311,12 +311,71 @@ function CtaBanner() {
   );
 }
 
+function GalleryTeaser() {
+  const photos = [
+    { src: "/assets/gallery/d.webp", title: "Salle de pause des employés", tag: "Après" },
+    { src: "/assets/gallery/b.webp", title: "Corridor — planchers revigorés", tag: "Après" },
+    { src: "/assets/gallery/e.webp", title: "Salle d'eau commerciale", tag: "Avant" },
+  ];
+  return (
+    <section className="bg-slate-50 py-24" data-testid="gallery-teaser-section">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="flex flex-wrap items-end justify-between gap-6">
+          <SectionHead
+            overline="Nos réalisations, en vrai"
+            title="Des photos prises par notre équipe, sur le terrain"
+            sub="Avant, après, pendant : nous documentons nos interventions parce que nous sommes fiers du résultat."
+          />
+          <Reveal delay={0.15}>
+            <Link
+              to="/galerie"
+              data-testid="gallery-teaser-link"
+              className="group inline-flex items-center gap-2 font-display font-bold text-brand-teal transition-colors hover:text-emerald-600"
+            >
+              Voir toute la galerie
+              <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </Link>
+          </Reveal>
+        </div>
+        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          {photos.map((p, i) => (
+            <Reveal key={p.src} delay={i * 0.12}>
+              <Link
+                to="/galerie"
+                className="group relative block overflow-hidden rounded-3xl shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
+              >
+                <img
+                  src={p.src}
+                  alt={p.title}
+                  loading="lazy"
+                  className="h-80 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <span
+                  className={`absolute left-4 top-4 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider ${
+                    p.tag === "Avant" ? "bg-amber-500/90 text-white" : "bg-emerald-500/90 text-white"
+                  }`}
+                >
+                  {p.tag}
+                </span>
+                <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-ink/90 to-transparent p-5 pt-14">
+                  <span className="font-display text-base font-bold text-white">{p.title}</span>
+                </span>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <main data-testid="home-page">
       <Hero />
       <Marquee items={MARQUEE_ITEMS} dark={false} />
       <ServicesBento />
+      <GalleryTeaser />
       <Manifesto />
       <Estimator />
       <Testimonials />
